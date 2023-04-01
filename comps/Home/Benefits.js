@@ -1,7 +1,7 @@
 const list = [
   {
     id: 1,
-    src: "",
+    src: "./img/home/benefits/1.png",
     title: 'Benefits for farmers',
     para: [
       "Direct access to a larger market",
@@ -12,7 +12,7 @@ const list = [
   },
   {
     id: 2,
-    src: "",
+    src: "./img/home/benefits/2.png",
     title: 'Benefits for Buyers',
     para: [
       "Access to a wide range of high-quality agricultural products.",
@@ -29,7 +29,7 @@ function Benefits() {
       {
         list.map(l => (
           <div key={l.id}>
-            <img src="" alt="" />
+            <img src={l.src} alt="" className="w-[142px] xs:w-[166px] sm:w-[227] md:w-[290px] lg:w-[397]"/>
 
             <div>
               <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[40px] font-bold">

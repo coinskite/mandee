@@ -16,7 +16,7 @@ function Header() {
       </button>
 
       <div className='w-1/2 mx-auto'>
-        <img src="./img/home/header.png" alt="" />
+        <img src="./img/home/header.png" alt="" className="w-[192px] xs:w-[236] sm:w-[323px] md:w-[281px] lg:w-[371px] xl:w-[509px]" />
       </div>
     </div>
   )

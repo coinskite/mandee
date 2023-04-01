@@ -46,7 +46,7 @@ function Technical() {
                 <img
                   src={l.src}
                   alt=""
-                  className="w-8"
+                  className="w-8 xs:w-4 sm:w-4.5 md:w-8 lg:w-10 xl:w-12"
                 />
 
                 <div>

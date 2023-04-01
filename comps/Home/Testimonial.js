@@ -13,7 +13,7 @@ function Testimonial() {
           </div>
 
           <div>
-            <img className="" />
+            <img src="./img/home/farmer.png" alt="" className="w-[17px] xs:w-[20px] sm:w-[31px] md:w-[34px] lg:w-[65px] " />
 
             <p className="text-[8px] xs:text-[10px] sm:text-xs lg:text-base text-[#0F0450] font-semibold">
               Peter Brown, Farmer
