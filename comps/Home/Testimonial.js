@@ -2,7 +2,7 @@
 function Testimonial() {
   return (
     <div className="px-8">
-      <div>
+      <div className="max-w-7xl mx-auto">
         <div className="text-xs xs:text-base sm:text-lg md:text-xl lg:text-[26px] xl:text-3xl text-center font-bold">
           Testimonials
         </div>

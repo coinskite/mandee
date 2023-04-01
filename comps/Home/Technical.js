@@ -29,8 +29,7 @@ const list = [
 function Technical() {
   return (
     <div className="px-8">
-      <div className="">
-
+      <div className="max-w-7xl mx-auto">
         <p className="text-xs xs:text-base sm:text-lg md:text-[22px] lg:text-[26px] xl:text-3xl text-[#0F0450] font-bold">
           Technical Specifications
         </p>
@@ -39,7 +38,7 @@ function Technical() {
           List of technical specifications of the platform and live price aggregator,including:
         </div>
 
-        <div className="">
+        <div>
           {
             list.map(l => (
               <div key={l.key}>
@@ -54,9 +53,9 @@ function Technical() {
                     {l.title}
                   </p>
 
-                  <div className="text-[5px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-xs xl:text-sm text-[#0F0450] font-medium ">
+                  <p className="text-[5px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-xs xl:text-sm text-[#0F0450] font-medium ">
                     {l.para}
-                  </div>
+                  </p>
                 </div>
               </div>
             ))

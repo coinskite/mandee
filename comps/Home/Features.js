@@ -33,17 +33,13 @@ const list = [
 
 function Features() {
   return (
-    <div className="pad-main">
-      <div className="">
-        <h1 className='text-sm xs:text-base sm:text-lg md:text-[22px] lg:text-[25px] xl:text-3xl-features
-
-font-bold text-[#0F0450] text-center'>
+    <div>
+      <div className="max-w-7xl mx-auto">
+        <h1 className='text-sm xs:text-base sm:text-lg md:text-[22px] lg:text-[25px] xl:text-3xl font-bold text-[#0F0450] text-center'>
           Features
         </h1>
 
-        <div className='
-text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] lg:text-[13px] xl:text-base
- font-normal text-center text-[#0F0450]'>
+        <div className='text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] lg:text-[13px] xl:text-base text-center text-[#0F0450]'>
           our features are designed to streamline your shopping experience and help you find the products you need with ease.
         </div>
 
@@ -54,7 +50,7 @@ text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] lg:text-[13px] xl:text-bas
                 key={l.key}
                 className='df px-2.5 py-2 bg-[#84FF90] border-t rounded-[5px]'
               >
-                <img src={l.src} alt="" className=" w-6 sm:w-6 md:w-7 lg:w-10 xl:w-12"/>
+                <img src={l.src} alt="" className="w-6 sm:w-6 md:w-7 lg:w-10 xl:w-12" />
 
                 <p className='text-[9px] lg:text-xs xl:text-[15px] font-bold'>
                   {l.title}

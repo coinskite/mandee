@@ -4,9 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   body {
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body::-webkit-scrollbar,
+  body ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  body::-webkit-scrollbar-track,
+  body ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  body::-webkit-scrollbar-thumb,
+  body ::-webkit-scrollbar-thumb {
+    background-color: #DBDBDE;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  body::-webkit-scrollbar-thumb:window-inactive,
+  body ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(66, 66, 66, 0.4);
   }
 
   input,
@@ -25,6 +50,34 @@
     @apply inline-block cursor-pointer rounded-md px-4 py-1 w-fit;
   }
 
+  svg {
+    @apply w-6 h-6 cursor-pointer
+  }
+}
+
+@layer components {
+  .df,
+  .dfc,
+  .dc {
+    @apply flex gap-2;
+  }
+
+  .df, .dc {
+    @apply items-center;
+  }
+
+  .dfc {
+    @apply flex-col;
+  }
+
+  .dc {
+    @apply justify-center;
+  }
+
+  .scroll-y {
+    @apply flex-1 overflow-y-auto;
+  }
+  
   .no-scroll-bar::-webkit-scrollbar {
     height: 0;
     width: 0;

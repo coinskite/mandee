@@ -26,29 +26,31 @@ const list = [
 function Benefits() {
   return (
     <div className="px-8 text-[#0F0450] bg-[#97FCA1]">
-      {
-        list.map(l => (
-          <div key={l.id}>
-            <img src={l.src} alt="" className="w-[142px] xs:w-[166px] sm:w-[227] md:w-[290px] lg:w-[397]"/>
+      <div className="max-w-7xl mx-auto">
+        {
+          list.map(l => (
+            <div key={l.id}>
+              <img src={l.src} alt="" className="w-[142px] xs:w-[166px] sm:w-[227px] md:w-[290px] lg:w-[397px]" />
 
-            <div>
-              <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[40px] font-bold">
-                {l.title}
-              </p>
+              <div>
+                <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[40px] font-bold">
+                  {l.title}
+                </p>
 
-              <ul className="list-disc list-inside">
-                {
-                  l.para.map((p, i) => (
-                    <li key={i}>
-                      {p}
-                    </li>
-                  ))
-                }
-              </ul>
+                <ul className="list-disc list-inside">
+                  {
+                    l.para.map((p, i) => (
+                      <li key={i}>
+                        {p}
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
             </div>
-          </div>
-        ))
-      }
+          ))
+        }
+      </div>
     </div>
   )
 }

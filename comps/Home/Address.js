@@ -1,4 +1,3 @@
-
 const list = [
   {
     key: '1',
@@ -23,45 +22,40 @@ const list = [
 
 function Address() {
   return (
-    <div>
-      <div>
-
-        <div className="text-[] text-[#0F0450]">
+    <div className="max-w-7xl mx-auto">
+      <div className="text-[] text-[#0F0450]">
         Our Offices
-        </div>
+      </div>
 
-        <div className="text-[#0F0450]">
-        Although we’re a remote-first 
-company, we also have office at 
-        </div>
+      <div className="text-[#0F0450]">
+        Although we’re a remote-first
+        company, we also have office at
+      </div>
 
-        <div>
-          <img src="" alt="" className=""/>
-        </div>
+      <div>
+        <img src="./img/home/address.png" alt="" className="" />
+      </div>
 
-        <div>
-      {
-        list.map(l => (
-          <div key={l.key}>
-            <div>
+      <div>
+        {
+          list.map(l => (
+            <div key={l.key}>
+              <div>
+                <p className="text-[#0F0450]">
+                  {l.title}
+                </p>
 
-              <p className="text-[#0F0450]">
-                {l.title}
-              </p>
-
-              <ul>
-                {
-                  l.list.map((p,i) => (
-                    <li key={i}>{p}</li>
-                  ))
-                }
-              </ul>
-              
+                <ul>
+                  {
+                    l.list.map((p, i) => (
+                      <li key={i}>{p}</li>
+                    ))
+                  }
+                </ul>
+              </div>
             </div>
-          </div>
-        ))
-      }
-        </div>
+          ))
+        }
       </div>
     </div>
   )
