@@ -29,18 +29,29 @@ const list = [
 
 function Technical() {
   return (
-    <div className="">
+    <div className="px-8">
+      <div className="">
+
+        <p className="text-xs xs:text-base sm:text-lg md:text-[22px] lg:text-[26px] xl:text-3xl text-[#0F0450] font-bold">
+        Technical Specifications
+        </p>
+
+        <div className="text-6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base font-normal">
+        List of technical specifications of the platform and live price aggregator,including:
+        </div>
+
+      <div className="">
       {
         list.map(l => (
           <div key = {l.key}>
             <img src="" alt="" />
 
             <div>
-              <p className="">
+              <p className="text-[8px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg xl:text-[22px] text-[#0F0450]  font-bold">
                 {l.title}
               </p>
 
-              <div>
+              <div className="text-[5px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-xs xl:text-sm text-[#0F0450] font-medium ">
                {
                 l.para
                }
@@ -50,6 +61,8 @@ function Technical() {
           </div>
             ))
       }
+    </div>
+      </div>
     </div>
   )
 }

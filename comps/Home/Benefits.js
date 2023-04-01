@@ -25,7 +25,7 @@ const list = [
 
 function Benefits() {
   return (
-    <div className="p-4 text-[#0F0450] bg-[#97FCA1]">
+    <div className="px-8 text-[#0F0450] bg-[#97FCA1]">
       {
         list.map(l => (
           <div key={l.id}>

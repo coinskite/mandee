@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className=''>
+    <div className='px-8'>
       <h1 className='text-sm xs:text-lg sm:text-[22px] lg:text-3xl xl:text-4xl text-[#0F0450] font-bold'>
         Buy and Sell Paddy and Maize Directly from Farmers in Tamilnadu
       </h1>
@@ -11,7 +11,7 @@ function Header() {
         buyers/business people in Tamilnadu.
       </p>
 
-      <button className='text-[10px] md:text-xs sm:text-[10px] xs:text-xs lg:text-base rounded-xl text-[#ffff] bg-[#22C954] font-medium '>
+      <button className='text-[10px] md:text-xs sm:text-[10px] xs:text-xs lg:text-base rounded-sm text-[#ffff] bg-[#22C954] font-medium '>
         Know more
       </button>
 
