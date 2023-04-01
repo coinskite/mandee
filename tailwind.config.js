@@ -8,13 +8,6 @@ module.exports = {
     "./comps/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          900: '#22C954'
-        }
-      }
-    },
     screens: {
       ts: "360px",
       xs: '480px',

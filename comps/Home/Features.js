@@ -33,9 +33,9 @@ const list = [
 
 function Features() {
   return (
-    <div className="p-6">
+    <div className="pad-main">
       <div>
-        <h1 className='text-[30px] font-bold text-[#0F0450] text-center px-50 mt-6 '>
+        <h1 className='text-[30px] font-bold text-[#0F0450] text-center'>
           Features
         </h1>
 
@@ -50,7 +50,7 @@ function Features() {
                 key={l.key}
                 className='df px-2.5 py-2 bg-[#84FF90] border-t rounded-[5px]'
               >
-                <img src="" alt="" />
+                <img src={l.src} alt="" />
 
                 <p className='text-[12px] font-bold'>
                   {l.title}

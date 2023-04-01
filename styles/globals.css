@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+
+  input,
+  textarea {
+    @apply block w-full px-3 py-2 text-sm text-gray-900 rounded focus:outline-none border border-gray-300 focus:outline-transparent;
+  }
+
+  select {
+    @apply w-full pl-4 pr-8 py-2 border appearance-none rounded focus:outline-none
+    bg-no-repeat bg-[url('../public/img/dropdown-arrow.png')] border-gray-300;
+    background-position: 98%;
+    background-size: 24px;
+  }
+
+  button {
+    @apply inline-block cursor-pointer rounded-md px-4 py-1 w-fit;
+  }
+
+  .no-scroll-bar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+}
