@@ -16,7 +16,7 @@ function Table() {
     <div className="p-6 overflow-scroll">
       <table className="w-full table-fixed">
         <thead>
-          <tr className="bg-[#22C954] text-white">
+          <tr className="bg-[#22C954] text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] xl:text-sm text-white">
             <td className="w-32 px-4 py-2">Commodity</td>
             <td className="w-32 px-4 py-2">Variety</td>
             <td className="w-36 px-4 py-2">Arrival Date</td>
@@ -33,15 +33,15 @@ function Table() {
           {
             list.map(l => (
               <tr key={l.key} className="odd:bg-[#F8F8F8]">
-                <td className="px-4 py-2">{l.commodity}</td>
-                <td className="px-4 py-2">{l.variety}</td>
-                <td className="px-4 py-2">{l.arrivalDate}</td>
-                <td className="px-4 py-2">{l.state}</td>
-                <td className="px-4 py-2">{l.district}</td>
-                <td className="px-4 py-2">{l.market}</td>
-                <td className="px-4 py-2">{l.maxPrice}</td>
-                <td className="px-4 py-2">{l.avgPrice}</td>
-                <td className="px-4 py-2">{l.minPrice}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] font-medium px-4 py-2">{l.commodity}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.variety}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.arrivalDate}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.state}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.district}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.market}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.maxPrice}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.avgPrice}</td>
+                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs  font-medium px-4 py-2">{l.minPrice}</td>
               </tr>
             ))
           }
