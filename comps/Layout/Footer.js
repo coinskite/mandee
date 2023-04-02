@@ -7,7 +7,7 @@ function Footer() {
           <div>
             <img src="./img/logos/coinskite.png" alt="" />
 
-            <p className="my-2">
+            <p className="text-8px] xs:text-[10px] sm:text-xs lg:text-sm font-medium my-2">
               6th Floor, Nizara Bonanza, Door No:813,
               Anna Salai, Chennai, Tamil Nadu 600002
             </p>
@@ -21,13 +21,13 @@ function Footer() {
               <img src="./img/social/medium.png" alt="" />
             </p>
 
-            <p>
+            <p className="text-[8px] xs:text-[10px] sm:text-xs lg:text-sm font-normal">
               @Copyright 2022 Coinskite Inc. All Rights Reserved
             </p>
           </div>
 
-          <div className="dfc">
-            <strong>COMPANY</strong>
+          <div className="text-[10px] sm:text-xs lg:text-base font-medium text-[#0F0450] dfc">
+            <strong className="text-xs sm:text-sm lg:text-base xl:text-lg font-semibold text-[#0F0450]">COMPANY</strong>
             <a href="/">About kiteza</a>
             <a href="/">Coinskite</a>
             <a href="/">Career</a>
@@ -38,13 +38,13 @@ function Footer() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="dfc">
+          <div className="text-[10px] xs:text-xs sm:text-sm lg:text-base font-medium dfc">
             <a href="/">Buyer</a>
             <a href="/">Seller</a>
             <a href="/">Mandi Price</a>
           </div>
 
-          <div className="">
+          <div className="text-[10px] xs:text-xs sm:text-sm lg:text-base xl:text-lg font-semibold">
             <strong>EXPERIENCE APP ON MOBILE</strong>
             <img className="my-2" src="./img/playstore.png" alt="" />
             <img src="./img/appstore.png" alt="" />
