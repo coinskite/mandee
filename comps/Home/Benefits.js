@@ -25,22 +25,22 @@ const list = [
 
 function Benefits() {
   return (
-    <div className="px-8 text-[#0F0450] bg-[#97FCA1]">
+    <div className="py-8 text-[#0F0450] bg-[#97FCA1]">
       <div className="max-w-7xl mx-auto">
         {
           list.map(l => (
-            <div key={l.id}>
+            <div className={`df sm:gap-4 md:gap-8 ${l.id === 2 ? "flex-row-reverse" : ""}`} key={l.id}>
               <img src={l.src} alt="" className="w-[142px] xs:w-[166px] sm:w-[227px] md:w-[290px] lg:w-[397px]" />
 
               <div>
-                <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[40px] font-bold">
+                <p className="mb-2 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-[32px] xl:text-[40px] font-bold">
                   {l.title}
                 </p>
 
                 <ul className="list-disc list-inside">
                   {
                     l.para.map((p, i) => (
-                      <li key={i}>
+                      <li key={i} className="text-[5px] xs:text-[7px] sm:text-[10px] md:text-xs lg:text-base xl:text-[22px] font-medium">
                         {p}
                       </li>
                     ))

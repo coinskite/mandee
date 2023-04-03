@@ -10,37 +10,33 @@ const list = [
       "Insights",
     ]
   },
-  {
-    key: '2',
-    list: [
-      "6th Floor, Nizara Bonanza,",
-      "Door No:813, Anna Salai,",
-      "Chennai,India",
-    ]
-  }
 ]
 
 function Address() {
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="text-[] text-[#0F0450]">
-        Our Offices
-      </div>
+    <div className="p-6 md:p-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+        <div className="text-[#0F0450]">
+          <h5 className="text-[#0F0450]">
+            Our Offices
+          </h5>
 
-      <div className="text-[#0F0450]">
-        Although we’re a remote-first
-        company, we also have office at
-      </div>
+          <p>
+            Although we’re a remote-first
+            company, we also have office at
+          </p>
 
-      <div>
+          <p>
+            6th Floor, Nizara Bonanza, Door No:813, Anna Salai, Chennai,India
+          </p>
+        </div>
+
         <img src="./img/home/address.png" alt="" className="" />
-      </div>
 
-      <div>
-        {
-          list.map(l => (
-            <div key={l.key}>
-              <div>
+        <div>
+          {
+            list.map(l => (
+              <div key={l.key}>
                 <p className="text-[#0F0450]">
                   {l.title}
                 </p>
@@ -53,9 +49,9 @@ function Address() {
                   }
                 </ul>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
     </div>
   )
