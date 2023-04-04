@@ -32,16 +32,16 @@ function Table() {
         <tbody>
           {
             list.map(l => (
-              <tr key={l.key} className="odd:bg-[#F8F8F8]">
-                <td className="text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] font-medium px-4 py-2">{l.commodity}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.variety}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.arrivalDate}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.state}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.district}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.market}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.maxPrice}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium px-4 py-2">{l.avgPrice}</td>
-                <td className="text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs  font-medium px-4 py-2">{l.minPrice}</td>
+              <tr key={l.key} className="odd:bg-[#F8F8F8] text-[4px] xs:text-[6px] sm:text-[7px] md:text-[8px] lg:text-[10px] xl:text-xs font-medium">
+                <td className="px-4 py-2 text-[#32A071]">{l.commodity}</td>
+                <td className="px-4 py-2 text-[#32A071]">{l.variety}</td>
+                <td className="px-4 py-2">{l.arrivalDate}</td>
+                <td className="px-4 py-2">{l.state}</td>
+                <td className="px-4 py-2">{l.district}</td>
+                <td className="px-4 py-2">{l.market}</td>
+                <td className="px-4 py-2">₹ {l.maxPrice}</td>
+                <td className="px-4 py-2">₹ {l.avgPrice}</td>
+                <td className="px-4 py-2">₹ {l.minPrice}</td>
               </tr>
             ))
           }
