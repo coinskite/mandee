@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.23.1",
     "close": "^0.0.1",
     "next": "13.2.4",
     "react": "18.2.0",
