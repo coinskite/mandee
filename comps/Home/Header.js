@@ -4,7 +4,7 @@ function Header() {
       <div className="md:flex md:items-center md:flex-row-reverse md:gap-4 max-w-7xl mx-auto text-center md:text-left">
         <div className="pl-6">
           <h1 className='text-sm xs:text-lg sm:text-[22px] lg:text-3xl xl:text-4xl text-[#0F0450] font-bold'>
-            Buy and Sell Paddy and Maize Directly from Farmers in Tamilnadu
+            Blockchain Powered <br /> Marketplace for Paddy
           </h1>
 
           <p className='mt-1 mb-2 text-[6px] sm:text-[8px] lg:text-[10px] xl:text-sm text-[#0F0450] font-medium'>

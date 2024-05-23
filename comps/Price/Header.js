@@ -33,8 +33,8 @@ function Header() {
 
       <div className="df gap-0 my-6 shadow-[1px_2px_7px_5px_#0000001A]">
         <img
-          className="hidden md:block"
-          src="./img/price/mazie.png"
+          className="hidden md:block w-44"
+          src="./img/price/paddy.webp"
           alt=""
         />
 
