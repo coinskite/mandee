@@ -1,6 +1,6 @@
 const list = Array(15).fill("").map((d, i) => ({
   key: i,
-  commodity: "Maize",
+  commodity: "Paddy",
   variety: "Hybrid",
   arrivalDate: "18-03-2023",
   state: "Tamil Nadu",
